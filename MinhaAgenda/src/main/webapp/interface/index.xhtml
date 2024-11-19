@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Minha Agenda</title>
+	<div class="card">
+		<h:form>
+			<p:growl id="messages" />
+
+			<p:menubar hideDelay="1000">
+				<f:facet name="start">
+					<p:graphicImage name="images/primefaces-logo.svg"
+						library="showcase" />
+				</f:facet>
+				<p:submenu label="Agenda" icon="pi pi-fw pi-file">
+					<p:menuitem value="Agendar Usuario" icon="pi pi-fw pi-plus" />
+					<p:divider />
+					<p:menuitem value="Minha Agenda" icon="pi pi-fw pi-copy"/>
+					<p:divider />
+					<p:menuitem value="Configuração Agenda"
+						icon="pi pi-fw pi-external-link" />
+				</p:submenu>
+
+				<p:submenu label="Profissionals" icon="pi pi-fw pi-pencil">
+					<p:menuitem value="Profissionais" icon="pi pi-fw pi-align-center" />
+					<p:menuitem value="Configuração Profissionais" icon="pi pi-fw pi-align-center" />
+				</p:submenu>
+			</p:menubar>
+		</h:form>
+	</div>
+</h:head>
+<h:body>
+
+</h:body>
+</html>
